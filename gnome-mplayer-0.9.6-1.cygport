@@ -1,0 +1,11 @@
+inherit gnome2
+
+DESCRIPTION="GNOME MPlayer GUI"
+HOMEPAGE="http://code.google.com/p/gnome-mplayer/"
+SRC_URI="http://gnome-mplayer.googlecode.com/files/${P}.tar.gz"
+PATCH_URI="0.9.6-no-undefined.patch"
+
+PKG_NAMES="${PN} nautilus-mplayer"
+PKG_HINTS="setup nautilus"
+gnome_mplayer_CONTENTS="etc/ usr/bin usr/share/"
+nautilus_mplayer_CONTENTS="usr/lib/nautilus/"

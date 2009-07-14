@@ -1,0 +1,8 @@
+category: Audio Gnome Video
+requires: libcurl4 libdbus-glib_1_2 libdbus1_3 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libmusicbrainz3_6 libnotify1 libpango1.0_0 libX11_6 mplayer
+sdesc: "GNOME Mplayer GUI"
+ldesc: "GNOME MPlayer is a simple GUI for MPlayer. It is intended to be 
+a nice tight player and provide a simple and clean interface to MPlayer. 
+GNOME MPlayer has a rich API that is exposed via DBus. Using DBus you 
+can control a single or multiple instances of GNOME MPlayer from a 
+single command."
