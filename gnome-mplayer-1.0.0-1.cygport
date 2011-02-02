@@ -3,7 +3,7 @@ inherit gnome2
 DESCRIPTION="GNOME MPlayer GUI"
 HOMEPAGE="http://code.google.com/p/gnome-mplayer/"
 SRC_URI="http://gnome-mplayer.googlecode.com/files/${P}.tar.gz"
-PATCH_URI="0.9.9.2-libtool.patch"
+PATCH_URI="1.0.0-libtool.patch"
 
 PKG_NAMES="${PN} nautilus-mplayer"
 PKG_HINTS="setup nautilus"

@@ -1,5 +1,5 @@
 category: Audio Gnome Video
-requires: libgcc1 libglib2.0_0 libgtk2.0_0 libintl8 mplayer nautilus
+requires: libglib2.0_0 libgtk2.0_0 libintl8 mplayer nautilus
 external-source: gnome-mplayer
 sdesc: "Nautilus audio/video properties plugin"
 ldesc: "GNOME MPlayer is a simple GUI for MPlayer. It is intended to be 
