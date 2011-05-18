@@ -1,6 +1,6 @@
---- origsrc/gnome-mplayer-1.0.0/configure.in	2010-11-05 11:16:37.000000000 -0500
-+++ src/gnome-mplayer-1.0.0/configure.in	2011-02-02 02:03:28.949271600 -0600
-@@ -15,7 +15,7 @@ AC_HEADER_STDC
+--- origsrc/gnome-mplayer-1.0.3/configure.in	2011-04-21 09:55:25.000000000 -0500
++++ src/gnome-mplayer-1.0.3/configure.in	2011-05-17 23:06:21.588668000 -0500
+@@ -16,7 +16,7 @@ AC_HEADER_STDC
  AC_PROG_CPP
  AC_PROG_CXX
  AM_PROG_CC_C_O
@@ -9,9 +9,9 @@
  
  dnl Set gettext package name
  GETTEXT_PACKAGE=gnome-mplayer
---- origsrc/gnome-mplayer-1.0.0/src/Makefile.am	2010-05-13 15:52:23.000000000 -0500
-+++ src/gnome-mplayer-1.0.0/src/Makefile.am	2011-02-02 02:04:28.712975800 -0600
-@@ -82,22 +82,22 @@ gnome_mplayer_LDADD = \
+--- origsrc/gnome-mplayer-1.0.3/src/Makefile.am	2011-04-13 15:24:14.000000000 -0500
++++ src/gnome-mplayer-1.0.3/src/Makefile.am	2011-05-17 23:06:14.059237400 -0500
+@@ -84,24 +84,23 @@ gnome_mplayer_LDADD = \
  if HAVE_NAUTILUS
  
  nautilusdir = $(NAUTILUSDIR)
@@ -25,17 +25,20 @@
      nautilus_property_page.c
  
 -libgnome_mplayer_properties_page_so_CFLAGS = -fPIC \
-+libgnome_mplayer_properties_page_la_CFLAGS = \
++libgnome_mplayer_properties_page_la_CFLAGS = -fPIC \
      $(NAUTILUS_CFLAGS) \
- 	$(GTK_CFLAGS) \
+-	$(GTK_CFLAGS) \
      $(GIO_CFLAGS) \
      $(AM_CFLAGS)
      
--libgnome_mplayer_properties_page_so_LDFLAGS = -avoid-version -shared
-+libgnome_mplayer_properties_page_la_LDFLAGS = -avoid-version -module -no-undefined
+-libgnome_mplayer_properties_page_so_LDFLAGS = -shared
++libgnome_mplayer_properties_page_la_LDFLAGS = \
++	-module -avoid-version -no-undefined
  
 -libgnome_mplayer_properties_page_so_LDADD = \
 +libgnome_mplayer_properties_page_la_LIBADD = \
  	$(NAUTILUS_LIBS) \
- 	$(GTK_LIBS) \
+-	$(GTK_LIBS) \
  	$(GIO_LIBS)
+ 
+ endif #HAVE_NAUTILUS
