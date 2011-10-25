@@ -1,0 +1,12 @@
+--- origsrc/gnome-mplayer-1.0.4/src/gui.c	2011-06-27 09:59:45.000000000 -0500
++++ src/gnome-mplayer-1.0.4/src/gui.c	2011-10-25 02:09:05.095917300 -0500
+@@ -5073,7 +5073,9 @@ void menuitem_config_callback(GtkMenuIte
+     gtk_spin_button_set_value(GTK_SPIN_BUTTON(config_volume), gm_pref_store_get_int(gm_store, VOLUME));
+     gm_pref_store_free(gm_store);
+     gtk_entry_set_width_chars(GTK_ENTRY(config_volume), 6);
++#ifndef GTK2_24_ENABLED
+     gtk_entry_set_editable(GTK_ENTRY(config_volume), FALSE);
++#endif
+     gtk_entry_set_alignment(GTK_ENTRY(config_volume), 1);
+     gtk_widget_show(config_volume);
+     i++;
