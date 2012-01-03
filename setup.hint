@@ -1,5 +1,5 @@
 category: Audio Gnome Video
-requires: libcairo2 libcurl4 libdbus-glib_1_2 libdbus1_3 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk3_0 libintl8 libmusicbrainz3_6 libnotify4 libX11_6 libXss1 mplayer
+requires: libcairo2 libcurl4 libdbus-glib_1_2 libdbus1_3 libgdk_pixbuf2.0_0 libglib2.0_0 libgmtk0 libgtk3_0 libintl8 libmusicbrainz3_6 libnotify4 libX11_6 libXss1 mplayer
 sdesc: "GNOME Mplayer GUI"
 ldesc: "GNOME MPlayer is a simple GUI for MPlayer. It is intended to be 
 a nice tight player and provide a simple and clean interface to MPlayer. 

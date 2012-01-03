@@ -3,12 +3,11 @@ inherit gnome2
 DESCRIPTION="GNOME MPlayer GUI"
 HOMEPAGE="http://code.google.com/p/gnome-mplayer/"
 SRC_URI="http://gnome-mplayer.googlecode.com/files/${P}.tar.gz"
-PATCH_URI="1.0.3-libtool.patch
-	   1.0.4-gtk3.patch"
+PATCH_URI="1.0.3-libtool.patch"
 
 PKG_NAMES="${PN} nautilus-mplayer"
 PKG_HINTS="setup nautilus"
 gnome_mplayer_CONTENTS="etc/ usr/bin usr/share/"
 nautilus_mplayer_CONTENTS="usr/lib/nautilus/"
 
-CYGCONF_ARGS="--enable-gtk3"
+KEEP_LA_FILES="none"
