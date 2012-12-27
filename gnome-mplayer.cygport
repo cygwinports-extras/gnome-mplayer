@@ -1,0 +1,18 @@
+inherit gnome2
+
+NAME="gnome-mplayer"
+VERSION=1.0.7
+RELEASE=1
+CATEGORY="Audio GNOME Video"
+SUMMARY="GNOME Mplayer GUI"
+DESCRIPTION="GNOME MPlayer is a simple GUI for MPlayer. It is intended to be
+a nice tight player and provide a simple and clean interface to MPlayer. GNOME
+MPlayer has a rich API that is exposed via DBus. Using DBus you can control a
+single or multiple instances of GNOME MPlayer from a single command."
+HOMEPAGE="http://code.google.com/p/gnome-mplayer/"
+SRC_URI="http://gnome-mplayer.googlecode.com/files/${P}.tar.gz"
+PATCH_URI="1.0.3-libtool.patch"
+
+PKG_NAMES="${PN} nautilus-mplayer"
+gnome_mplayer_CONTENTS="etc/ usr/bin usr/share/"
+nautilus_mplayer_CONTENTS="usr/lib/nautilus/"

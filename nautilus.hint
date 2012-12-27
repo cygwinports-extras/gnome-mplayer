@@ -1,9 +1,0 @@
-category: Audio Gnome Video
-requires: libglib2.0_0 libgtk3_0 libintl8 mplayer nautilus
-external-source: gnome-mplayer
-sdesc: "Nautilus audio/video properties plugin"
-ldesc: "GNOME MPlayer is a simple GUI for MPlayer. It is intended to be 
-a nice tight player and provide a simple and clean interface to MPlayer. 
-GNOME MPlayer has a rich API that is exposed via DBus. Using DBus you 
-can control a single or multiple instances of GNOME MPlayer from a 
-single command."

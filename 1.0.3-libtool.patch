@@ -11,7 +11,7 @@
  GETTEXT_PACKAGE=gnome-mplayer
 --- origsrc/gnome-mplayer-1.0.3/src/Makefile.am	2011-04-13 15:24:14.000000000 -0500
 +++ src/gnome-mplayer-1.0.3/src/Makefile.am	2011-05-17 23:06:14.059237400 -0500
-@@ -84,24 +84,25 @@ gnome_mplayer_LDADD = \
+@@ -84,22 +84,23 @@ gnome_mplayer_LDADD = \
  if HAVE_NAUTILUS
  
  nautilusdir = $(NAUTILUSDIR)
@@ -39,6 +39,4 @@
 +libgnome_mplayer_properties_page_la_LIBADD = \
  	$(NAUTILUS_LIBS) \
  	$(GTK_LIBS) \
- 	$(GIO_LIBS)
- 
- endif #HAVE_NAUTILUS
+ 	$(GMLIB_LIBS) \
